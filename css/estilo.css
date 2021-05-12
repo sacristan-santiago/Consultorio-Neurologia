@@ -1,0 +1,417 @@
+
+/*Padding y margen para todo el proyecto*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Tipo de letra y tamaño de la pagina web, se agrega link de letra
+ en el head del HTML */
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f8f9fa;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  body {
+    font-size: 13px;
+  }
+} 
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+/*Letra blanca con fondo negro en titulos*/
+h1 {
+	color: white;
+	font-weight: normal;
+	font-size: 1.5rem;
+	padding-left: 0.5em;
+}
+
+h2 {
+	font-weight: normal;
+  text-align: center;
+}
+
+p {
+	line-height: 1.5em;
+  text-align: justify;
+}
+
+/*Elimino la decoracion de hipervinculo (subrayado) de la etiqueta a
+en todo el documento (tal vez lo elimino)*/
+
+form {
+	display: block;
+	margin-left: 2vw;
+	margin-right: 2vw;
+	width: 30vw;
+	font-size: 1rem;
+}
+
+form textarea {
+	width: 96%;
+    resize: vertical;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.blackBorder {
+	border: solid 2px;
+}
+
+.estandarMargin {
+	margin: 1rem;
+}
+/*defino una seccion negra con letra blanca y alineacion de texto centrada */
+.blackSection {
+	background-color: black;
+	color: white;
+	text-align: center;	
+}
+
+/*defino una seccion amarilla con letra negra y alineacion de texto centrada */
+.yellowSection {
+	background-color: yellow;
+	color: black;
+	text-align: center;	
+}
+
+/*defino una seccion blanca con letra negra y alineacion de texto centrada */
+.whiteSection{
+	background-color: white;
+	color: black;
+	text-align: center;	
+}
+
+.acercadeContainer {
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+/*Clase para ubicar imagenes/iframes en el centro de la pantalla*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.epigrafe {
+  font-weight: bold ;
+}
+
+.imageFitBox {
+	max-width: 100%;
+}
+
+.logo {
+  height: 25vh;
+  display:  block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.centerText {
+	text-align: center;
+  width: 100%;
+}
+
+/*ID para solapar figcaption con su imagen */
+.jumbotronImg {
+  background-image: url("https://image.freepik.com/free-photo/brain-research-magnetic-resonance-imaging_114106-15.jpg");
+}
+
+.indexContainer figure {
+  margin: 0rem;
+}
+
+#figcaption1 {
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 2em;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*ARTICLES SPLIT SCREEN*/
+/*Ubico los articulos en 3 cajas en posicion HORIZONTAL, aplico un
+ ID para Articulos*/
+.box-container1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.acercadeParentBox {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	height: 100%;
+}
+
+
+.acercadeParentBox {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+ .acercadeChildBox1 {
+ 	width: 35vw;
+ 	text-align: center;
+  margin: 1rem;
+ }
+
+ .acercadeChildBox2 {
+ 	text-align: center;
+ 	height: 80%;
+ 	list-style: none;
+ }
+
+ .acercadeChildBox2 ul{
+ 	list-style: none;
+ 	line-height: 2.5em;
+ }
+
+ .contactoParentBox {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+}
+
+.contactoWrap {
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+
+.contactoChildBox {
+ 	width: 25vw;
+ }
+
+@media only screen and (min-width: 768px) {
+  .indexParentBox {
+  	display: flex;
+  	justify-content: space-evenly;
+  }
+
+  .indexBox {
+    background-image: linear-gradient(to bottom, #f2c900 , #bd7b1f);
+    border: solid 1px #bd7b1f;
+    border-radius: 20px;
+    margin: 2vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 25vw;
+    height: 100%;
+    transition: transform 1s;
+  }
+  .indexBox a {
+    color: black;
+  }
+
+  .indexBox:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .indexParentBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .indexBox {
+    background-color: #e0a42b;
+    border-radius: 20px;
+    margin: 2vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 85vw;
+    height: 100%;
+    transition: transform 1s;
+  }
+  .indexBox a {
+    color: black;
+  }
+
+  .indexBox:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+  }
+}
+/*CONTACTO/HORARIO/DIRECCION/ SPLIT SCREEN*/
+/*Ubico los datos de contacto en 3 cajas en HORIZONTAL, aplico un
+ ID para dicha seccion*/
+@media only screen and (min-width: 768px) {
+  .box-container2 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  .box-container2 p {
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .box-container2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+  .box-container2 p {
+    text-align: center;
+  }
+
+  .box-container2 div {
+    margin-bottom: 1em;
+  }
+}
+
+  /*Estilo lista no ordenada */
+.listStyle {
+  	list-style-type: none;
+    display: inline-block
+  }
+
+.listStyle li{
+    display: inline-block
+  }
+
+
+
+.testimonios {
+	text-align: center;
+	font-style: italic;
+}
+
+.testimonios p {
+  text-align: center;
+}
+
+/*CONFIGURACION PARA GRIDS*/
+
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-template-areas:  
+    "figure que que"
+    "figure servicio servicio "                      
+    "figure primera primera"
+    "estudios estudios estudios"
+    "enfermedades enfermedades enfermedades"
+    "testimonios testimonios testimonios"
+}
+
+.gridDiv {
+  background-color: #E0A42B;
+  border-radius: 20px;
+  margin: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.gridDiv h2 {
+  font-weight: bold;
+}
+.gridDiv p {
+  text-align: justify;
+}
+
+.gridsServiciosItem1 {
+  grid-area: servicio;
+}
+
+.gridsServiciosItem2 {
+  grid-area: que;
+}
+
+.gridsServiciosItem3 {
+  grid-area: quien;
+}
+
+.gridsServiciosItem4 {
+  grid-area: primera;
+}
+
+.gridsServiciosItem5 {
+  grid-area: estudios;
+}
+
+.gridsServiciosItem5 ul{
+  list-style: none;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+
+.gridsServiciosItem6 {
+  grid-area: enfermedades;
+}
+
+.gridsServiciosItem6 ul{
+  list-style: none;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.gridsServiciosItem7 {
+  grid-area: testimonios;
+}
+
+.gridsServiciosItem8 {
+  grid-area: figure;
+  align-self: flex-start;
+  margin: 1vw;
+}
+.gridsServiciosItem8 img {
+  max-width: 100%
+
+}
+
+/* RESPONSIVE DISPLAY NONE*/
+
+@media only screen and (max-width: 600px) {
+  .displayNoneMobile {
+    display: none;
+  }  
+}
+
+/*TABLES PREMIOS Y PUBLICACIONES*/
+.tableGen {
+  margin-top: 1vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+.tableHead {
+  background-color: #E0A42B;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.tableBody td{
+  vertical-align: top;
+  width: 33%;
+  padding-bottom: 1vw
+}
