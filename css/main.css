@@ -7197,26 +7197,13 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   overflow-x: hidden; }
 
-/*Tipo de letra y tamaño de la pagina web, se agrega link de letra
- en el head del HTML */
 body {
-  font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /*font familiy link en head de HTMLs*/
+  font-family: 'Open Sans', sans-serif; }
 
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 15px; } }
-
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-  body {
-    font-size: 13px; } }
-
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 10px; } }
-
-/*Letra blanca con fondo negro en titulos*/
+/*TAMAÑO DE LETRAS*/
 h1 {
   color: white;
   font-weight: normal;
@@ -7237,54 +7224,17 @@ p {
   line-height: 1.5em;
   text-align: justify; }
 
-/*ID para solapar figcaption con su imagen */
+/*CLASE PARA INCORPORAR JUMBOTRON AL INDEX*/
 .jumbotronImg {
   background-image: url("https://image.freepik.com/free-photo/brain-research-magnetic-resonance-imaging_114106-15.jpg"); }
 
-/*CONTACTO/HORARIO/DIRECCION/ SPLIT SCREEN*/
-/*Ubico los datos de contacto en 3 cajas en HORIZONTAL, aplico un
- ID para dicha seccion*/
-@media only screen and (min-width: 768px) {
-  .box-container2 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-  .box-container2 p {
-    text-align: center; } }
-
-@media only screen and (max-width: 767px) {
-  .box-container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
-  .box-container2 p {
-    text-align: center; }
-  .box-container2 div {
-    margin-bottom: 1em; } }
-
-/*Estilo lista no ordenada */
-.listStyle {
-  list-style-type: none;
-  display: inline-block; }
-
-.listStyle li {
-  display: inline-block; }
-
-.listStyle--inside li {
-  list-style-position: inside; }
-
-.listStyle--circle {
-  list-style: circle; }
-
-/*BLOQUE BACKGROUND*/
+/*BLOQUE BACKGROUND Y BLACKSECTION*/
 .background--gray {
   background-color: #f9f9f9; }
 
 .background--black {
   background-color: #151719; }
 
-/*Seccion negra con letra blanca y alineacion de texto centrada */
 .blackSection {
   background-color: #151719;
   color: white;
@@ -7292,6 +7242,7 @@ p {
   .blackSection--left {
     text-align: left; }
 
+/*CLASES PARA DROPDOWN DEL NAV*/
 .dropdown-item {
   display: block;
   width: 100%;
@@ -7309,6 +7260,7 @@ p {
   text-decoration: none;
   background-color: #151719; }
 
+/*CLASES PARA CARDS DEL INDEX */
 .indexBox {
   background-color: #f9f9f9;
   transition: transform 1s; }
@@ -7321,19 +7273,6 @@ p {
     font-weight: bold; }
   .indexBox__image {
     max-width: 100%; }
-
-.tableGen {
-  margin-top: 1vw;
-  margin-right: 2vw;
-  margin-left: 2vw; }
-  .tableGen__head {
-    background-color: #E0A42B;
-    font-weight: bold;
-    vertical-align: top; }
-  .tableGen__body {
-    vertical-align: top;
-    width: 33%;
-    padding-bottom: 1vw; }
 
 .center {
   display: block;
@@ -7351,17 +7290,7 @@ p {
   .logo--backgroundBlack {
     background-color: black; }
 
-.listaInterlineado ul {
-  list-style: circle;
-  line-height: 2.5em;
-  text-align: left;
-  list-style-position: inside; }
-
-.listaInterlineado--center ul {
-  text-align: center;
-  list-style: none;
-  line-height: 2.5em; }
-
+/*CLASES CARROUSEL TESTIMONIOS */
 .blockquote-custom-icon {
   width: 50px;
   height: 50px;
@@ -7376,3 +7305,41 @@ p {
 .blockquote-custom {
   position: relative;
   font-size: 1.1rem; }
+
+/*TAMAÑO DE LETRA SEGUN DISPOSITIVO*/
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  body {
+    font-size: 13px; } }
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px; } }
+
+/*ESTILOS DE LISTAS*/
+.listStyle {
+  list-style-type: none;
+  display: inline-block; }
+
+.listStyle li {
+  display: inline-block; }
+
+.listStyle--inside li {
+  list-style-position: inside; }
+
+.listStyle--circle {
+  list-style: circle; }
+
+.listaInterlineado ul {
+  list-style: circle;
+  line-height: 2.5em;
+  text-align: left;
+  list-style-position: inside; }
+
+.listaInterlineado--center ul {
+  text-align: center;
+  list-style: none;
+  line-height: 2.5em; }

@@ -1,7 +1,7 @@
 {
-  "name": "consultorio-neurologia-bootstrap-sass",
+  "name": "Sitio-web-consultorio-neurologico-Horacio-Sacristan",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este es el sitio web del Dr. Horacio Sacristán en el que encontrarás su biografia, servicios neurologicos, publicaciones, premios, información de contacto y turnos. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

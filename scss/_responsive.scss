@@ -1,0 +1,19 @@
+/*TAMAÑO DE LETRA SEGUN DISPOSITIVO*/
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+}

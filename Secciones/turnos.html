@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<script src="../scripts/gen_validatorv4.js" type="text/javascript"></script>
 </head>
 <body> 
 	<nav class="navbar navbar-expand-lg navbar-dark sticky-top background--black border-bottom border-dark">
@@ -46,42 +47,48 @@
 	<div class="row">
     	<div class="col-lg-4">
 			<h3 class="text-center">Turnos</h3>
-			<form class="container-fluid">
+			<form method="post" name="myemailform" action_x="../php/form-to-email.php"class="container-fluid" >
 			  <div class="form-group">
 			    <label for="nombreInput">Nombre</label>
-			    <input type="text" class="form-control" id="nombreInput" aria-describedby="nombreHelp">
+			    <input type="text" class="form-control" id="nombreInput" name="nombreInput" aria-describedby="nombreHelp">
 			  </div>
 			  <div class="form-group">
 			    <label for="apellidoInput">Apellido</label>
-			    <input type="text" class="form-control" id="apellidoInput" aria-describedby="apellidoHelp">
+			    <input type="text" class="form-control" id="apellidoInput" name="apellidoInput" aria-describedby="apellidoHelp">
 			  </div>
 			  <div class="form-group">
-			    <label for="edadInput">Edad</label>
-			    <input type="number" class="form-control" id="edadInput" aria-describedby="edadHelp">
+			    <label for="correoInput">Correo electrónico</label>
+			    <input type="text" class="form-control" id="nombreInput" name="correoInput" aria-describedby="nombreHelp">
 			  </div>
 			  <div class="form-group">
-			    <label for="telefonoInput">Telefono</label>
-			    <input type="text" class="form-control" id="telefonoInput" aria-describedby="telefonoHelp">
+			    <label for="telefonoInput">Teléfono</label>
+			    <input type="text" class="form-control" id="telefonoInput" name="telefonoInput"  aria-describedby="telefonoHelp">
 			  </div>
 			  <div class="form-group">
-			    <label for="exampleFormControlSelect1">Cobertura Médica</label>
-			    <select class="form-control" id="exampleFormControlSelect1">
+			    <label for="coberturaInput">Cobertura Médica</label>
+			    <select class="form-control" id="coberturaInput" name="coberturaInput">
 			      <option>OSDE</option>
 			      <option>IOMA</option>
 			      <option>GALENO</option>
 			      <option>PARTICULAR</option>
 			    </select>
 			  </div>
+			  <div class="form-group">
+			    <label for="razonInput">Razón de la consulta</label>
+			    <textarea class="form-control" id="razonInput" name="razonInput" rows="3"></textarea>
+			  </div>
 			  <div class="form-group form-check">
-			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+			    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="primeraConsultaInput">
 			    <label class="form-check-label" for="exampleCheck1">Primera consulta</label>
 			  </div>
-			  <div class="form-group">
-			    <label for="exampleFormControlTextarea1">Razón de la consulta</label>
-			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-			  </div>
-			  <button type="submit" class="btn btn-primary">Submit</button>
+			  <button type="submit" name="submit" value="submit" class="btn btn-primary">Submit</button>
 			</form>
+			<script language="JavaScript">
+			var frmvalidator  = new Validator("myemailform");
+			frmvalidator.addValidation("nombreInput","req","Por favor ingrese su nombre"); 
+			frmvalidator.addValidation("correoInput","req","Por favor ingrese su correo electrónico"); 
+			frmvalidator.addValidation("email","email","Por favor ingrese un correo electrónico valido"); 
+			</script>
 		</div>
 		<div class="col-lg-8">
 			<h3 class="text-center">Nuestras Oficinas</h3>

@@ -1,0 +1,150 @@
+/*Padding y margen para todo el proyecto*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    /*font familiy link en head de HTMLs*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*TAMAÑO DE LETRAS*/
+h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 2.5em;
+    padding-left: 0.5em;
+}
+
+h2 {
+    
+    font-size: 2.5em;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4{
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+/*CLASE PARA INCORPORAR JUMBOTRON AL INDEX*/
+.jumbotronImg {
+    background-image: url("https://image.freepik.com/free-photo/brain-research-magnetic-resonance-imaging_114106-15.jpg");
+}
+
+/*BLOQUE BACKGROUND Y BLACKSECTION*/
+.background{
+    &--gray {
+        background-color: $gray-mine;
+    }
+    &--black {
+        background-color: $black;
+    }
+}
+
+.blackSection {
+    background-color: $black;
+    color: white;
+    text-align: center;
+
+    &--left {
+        text-align: left;
+    }
+}
+
+/*CLASES PARA DROPDOWN DEL NAV*/
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: $black;
+  border: 0; }
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: $light;
+    text-decoration: none;
+    background-color: $black; }
+
+
+/*CLASES PARA CARDS DEL INDEX */
+.indexBox {
+    background-color: $gray;
+    transition: transform 1s;
+
+    &:hover {
+        transform: scale(1.05, 1.05);
+        cursor: pointer;
+    }
+
+    a {
+    color: black;
+    }
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    &__image {
+      max-width: 100%;
+    }
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageFitBox {
+    max-width: 100%;
+}
+
+.logo {
+    max-height: 25vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    &--backgroundBlack {
+        background-color: black; 
+    }
+}
+
+/*CLASES CARROUSEL TESTIMONIOS */
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}

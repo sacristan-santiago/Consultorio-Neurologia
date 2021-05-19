@@ -6,4 +6,6 @@ $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
 /*ESTILOS IMPORTADOS*/
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import "estilo";
+@import "_estilo";
+@import "_responsive";
+@import "_listas";

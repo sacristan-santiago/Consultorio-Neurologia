@@ -1,0 +1,33 @@
+/*ESTILOS DE LISTAS*/
+.listStyle {
+    list-style-type: none;
+    display: inline-block
+}
+
+.listStyle li {
+    display: inline-block
+}
+
+.listStyle--inside li{
+    list-style-position: inside;
+}
+
+.listStyle--circle {
+    list-style: circle;
+}
+
+.listaInterlineado {
+    ul {
+        list-style: circle;
+        line-height: 2.5em;
+        text-align: left;
+        list-style-position: inside;
+    }
+    &--center{
+        ul {
+          text-align: center;
+          list-style: none;
+          line-height: 2.5em;
+        }
+    }
+}
