@@ -7230,10 +7230,13 @@ p {
 
 /*BLOQUE BACKGROUND Y BLACKSECTION*/
 .background--gray {
-  background-color: #f9f9f9; }
+  background-color: #eeeef0; }
 
 .background--black {
   background-color: #151719; }
+
+.background--lightGray {
+  background-color: #f9f9f9; }
 
 .blackSection {
   background-color: #151719;

@@ -56,6 +56,9 @@ p {
     &--black {
         background-color: $black;
     }
+    &--lightGray {
+        background-color: $gray;
+    }
 }
 
 .blackSection {
